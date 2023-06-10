@@ -14,7 +14,7 @@ background: rgba(64, 59, 84, 0.2);
 border-radius: 30px;
 `
 const Header=styled.h3`
-border:1px solid white;
+
 // position: absolute;
 padding:1rem 2rem;
 width: 152px;
@@ -55,7 +55,7 @@ text-transform: capitalize;
 
 color: #C4B6FF;
 `
-const Div=styled.div`
+const Input=styled.input`
 position: absolute;
 width: 432px;
 height: 54px;
@@ -65,14 +65,23 @@ top: 102px;
 background: #FFFFFF;
 border-radius: 60px;
 `
+const Button=styled.input`
+position: absolute;
+width: 59.5px;
+height: 56px;
+left: 484px;
+top: 101px;
+
+background: #8B6DFF;
+border-radius: 30px;`
+
 const Sparkspace = () => {
     return (
         <CardContainer>
             <Header>Sparkspace</Header>
             <Desc>Post your ideas here</Desc>
-           <Div>
-             <input type="text" name="text" />
-           </Div>
+            <Input type='text' placeholder=''/>
+            <Button type='button'></Button>
         </CardContainer>
     )
 }
